@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ## Dependencies
 
 - Python 3.x
-- OpenCV 4.11
+- OpenCV 4.11.0.86
 - NumPy 2.2.2
 
 ## Usage
@@ -56,7 +56,7 @@ python train.py <path to training positive dataset> <path to training negative d
 Use the trained SVM model to classify images in dir:
 
 ```bash
-python classify.py <path to svm model> <path to dataset> <output path for results>
+python classify.py <path to svm model> <path to dataset>
 ```
 
 ## Dataset Format
@@ -76,4 +76,4 @@ dataset/
 
 ## Results
 
-The results are saved in json file.
+The results are saved in yml and json files.

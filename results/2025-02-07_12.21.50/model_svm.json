@@ -1,0 +1,37 @@
+{
+    "datatime": "2025-02-07_12.21.50",
+    "revision": "",
+    "build date": "",
+    "positive dataset": "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades",
+    "negative dataset": "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades",
+    "output path": "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\results\\2025-02-07_12.21.50",
+    "output model": "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\results\\2025-02-07_12.21.50\\model_svm.yml",
+    "n training images": 16,
+    "training images": [
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\0cde09942.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\0d5924c36.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\0dcaa2e04.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\0e1cf9640.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\0e2c42021.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\0ee490058.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\1a0cecc5d.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\1a6265dbd.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\1b559d258.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\000eb4522.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\00a725bbd.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\00ec8fa4f.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\0a0b682ec.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\0a27cf678.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\0a2c96442.png",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\0a5865c8b.jpg"
+    ],
+    "n missed images": 6,
+    "missed images": [
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\01aee3916.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\0aa32ede0.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\blades\\1af140717.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\00e63402c.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\0a77fd2b1.jpg",
+        "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\train\\not_blades\\0a8b78947.jpg"
+    ]
+}

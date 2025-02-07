@@ -1,0 +1,30 @@
+{
+    "datatime": "2025-02-07_12.37.42",
+    "revision": "",
+    "build date": "",
+    "output path": "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\results\\2025-02-07_12.21.50",
+    "testing dataset": "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\test",
+    "testing model": "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\results\\2025-02-07_12.21.50\\model_svm.yml",
+    "n object detected": 2,
+    "object detected": [
+        [
+            0.699999988079071,
+            "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\test\\fbdd03969.png"
+        ],
+        [
+            1.0,
+            "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\test\\fe0f0785f.png"
+        ]
+    ],
+    "n no object": 2,
+    "no object": [
+        [
+            0.5,
+            "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\test\\fcd75475f.jpg"
+        ],
+        [
+            0.0,
+            "C:\\Users\\kmlaj\\PycharmProjects\\bladeClassifier\\dataset\\test\\fd2842f6b.jpg"
+        ]
+    ]
+}
