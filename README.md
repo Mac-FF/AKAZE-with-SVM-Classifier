@@ -61,19 +61,29 @@ python classify.py <path to svm model> <path to dataset>
 
 ## Dataset Format
 
-Scripts support PNG and JPG images. The dataset should be structured as follows:
+Scripts support PNG and JPG images. The example dataset can be structured as follows:
 
 ```
 dataset/
-│── <positive>/
+│── <test>/
 │   ├── image1.jpg
 │   ├── image2.jpg
-│── <negative>/
-│   ├── image1.jpg
-│   ├── image2.jpg
+│   ├── ...
+│── <train>/
+	│── <positive>/
+	│   ├── image1.jpg
+	│   ├── image2.jpg
+	│   ├── ...
+	│── <negative>/
+	│   ├── image1.jpg
+	│   ├── image2.jpg
+	│   ├── ...
 ...
 ```
 
 ## Results
 
-The results are saved in yml and json files.
+The results are saved in yml (svm model) and json (result of train and classification) files. 
+
+The scripts also save partial photos in dirs: "train_debug" and "classify_debug"
+
