@@ -70,8 +70,12 @@ def save_image(file_name, image, comment):
         cv.imwrite(out_name, image)
 
 def prepare_image(image):
+    image = scale_up(image)
     image = blur(image)
     return equalize_brightness(image)
+
+def scale_up(image):
+    return cv.resize(image, dsize=None, fx=2.0, fy=2.0, interpolation=cv.INTER_CUBIC)
 
 def blur(image):
     sigma = 5.0
@@ -97,7 +101,11 @@ def equalize_brightness(image):
 
 def extract_fetures(image):
     akaze_thresh = 0.00001
-    # max_points = 8
-    akaze = cv.AKAZE_create(threshold=akaze_thresh)
+    min_points = 4
+    max_points = 16
+    akaze = cv.AKAZE_create(threshold=akaze_thresh, max_points=max_points)
     kp, desc = akaze.detectAndCompute(image, None)
+    if len(kp) < min_points:
+        desc = None
+        kp = None
     return kp, desc

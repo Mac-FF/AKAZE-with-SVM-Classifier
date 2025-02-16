@@ -37,7 +37,9 @@ def main():
         'n object detected': 0,
         'object detected': [],
         'n no object': 0,
-        'no object': []
+        'no object': [],
+        'n missed images': 0,
+        'missed images': []
     }
 
     # Read model
@@ -66,17 +68,20 @@ def main():
 
             mean_prediction = float(np.mean(results))
             prediction = 1 if mean_prediction > 0.5 else 0
+            result = str(round(mean_prediction, 2)) + ": " + test_file_name
             if prediction == 1:
-                print('Object detected')
-                json_data["object detected"].append([mean_prediction, test_file_name])
+                print('Object detected:', mean_prediction)
+                json_data["object detected"].append(result)
             else:
-                print('No object')
-                json_data["no object"].append([mean_prediction, test_file_name])
+                print('No object:', mean_prediction)
+                json_data["no object"].append(result)
         else:
-            print('No features in the test image')
+            print('No features:', 0)
+            json_data["missed images"].append(test_file_name)
 
     json_data["n object detected"] = len(json_data["object detected"])
     json_data["n no object"] = len(json_data["no object"])
+    json_data["n missed images"] = len(json_data["missed images"])
 
     # Save testing results
     results_file_name = results_dir + os.sep + 'test_results.json'
